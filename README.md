@@ -1,4 +1,4 @@
-# sp_vision_tutorial_27 
+# sp_vision_tutorial_27_personl_learing_work 
 同济大学SuperPower战队2027赛季算法组招新仓库
 
 Lecture 1:Hello SP Vision  
