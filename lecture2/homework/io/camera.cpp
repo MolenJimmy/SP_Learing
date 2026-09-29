@@ -4,11 +4,12 @@
 
 #include "hikrobot/include/MvCameraControl.h"
 
-cv::Mat transfer(MV_FRAME_OUT & raw)
+cv::Mat transfer(MV_FRAME_OUT & raw, void * handle)
 {
-  MV_CC_PIXEL_CONVERT_PARAM cvt_param;
-  cv::Mat img(cv::Size(raw.stFrameInfo.nWidth, raw.stFrameInfo.nHeight), CV_8U, raw.pBufAddr);
+  cv::Mat img(
+    cv::Size(raw.stFrameInfo.nWidth, raw.stFrameInfo.nHeight), CV_8UC3);
 
+  MV_CC_PIXEL_CONVERT_PARAM cvt_param{};
   cvt_param.nWidth = raw.stFrameInfo.nWidth;
   cvt_param.nHeight = raw.stFrameInfo.nHeight;
 
@@ -17,38 +18,19 @@ cv::Mat transfer(MV_FRAME_OUT & raw)
   cvt_param.enSrcPixelType = raw.stFrameInfo.enPixelType;
 
   cvt_param.pDstBuffer = img.data;
-  cvt_param.nDstBufferSize = img.total() * img.elemSize();
+  cvt_param.nDstBufferSize = static_cast<unsigned int>(img.total() * img.elemSize());
   cvt_param.enDstPixelType = PixelType_Gvsp_BGR8_Packed;
 
-  auto pixel_type = raw.stFrameInfo.enPixelType;
-
-  // unordered_map字典：key 是海康像素格式，value 是 OpenCV 颜色转换码
-  // const static：这个字典只创建一次，不会每次调用函数重复创建，不可修改
-  const static std::unordered_map<MvGvspPixelType, cv::ColorConversionCodes> type_map = {
-    {PixelType_Gvsp_BayerGR8, cv::COLOR_BayerGR2RGB},
-    {PixelType_Gvsp_BayerRG8, cv::COLOR_BayerRG2RGB},
-    {PixelType_Gvsp_BayerGB8, cv::COLOR_BayerGB2RGB},
-    {PixelType_Gvsp_BayerBG8, cv::COLOR_BayerBG2RGB}};
-
-  if (type_map.count(pixel_type)) {
-    cv::cvtColor(img, img, type_map.at(pixel_type));
-    cv::cvtColor(img, img, cv::COLOR_RGB2BGR);
-  }
+  if (MV_CC_ConvertPixelType(handle, &cvt_param) != MV_OK) return cv::Mat();
   return img;
 }
 
 Camera::Camera()
 {
-  // 打开相机
-  if (!Open()) {
-    return;
-  }
 }
 
 Camera::~Camera()
 {
-  // 关闭相机
-  Close();
 }
 
 cv::Mat Camera::Read()
@@ -69,9 +51,7 @@ cv::Mat Camera::Read()
     return cv::Mat();
   }
 
-  cv::Mat img = transfer(raw);
-  cv::imshow("img", img);
-  cv::waitKey(0);
+  cv::Mat img = transfer(raw, handle_);
 
   // 重中之重！GetImageBuffer拿到帧，必须调用FreeImageBuffer归还缓冲区给SDK
   ret_ = MV_CC_FreeImageBuffer(handle_, &raw);
@@ -82,13 +62,15 @@ bool Camera::Open()
 {
   // 如果已经打开相机,handle_不是空指针
   if (handle_ != nullptr) {
+    std::cout<<"Have Camera"<<std::endl;
     return true;
   }
 
   // 调用 SDK 枚举 USB 相机
-  MV_CC_DEVICE_INFO_LIST device_list;
+  MV_CC_DEVICE_INFO_LIST device_list{};
   ret_ = MV_CC_EnumDevices(MV_USB_DEVICE, &device_list);
   if (ret_ != MV_OK || device_list.nDeviceNum == 0) {
+    std::cout<<"No Device"<<std::endl;
     return false;
   }
 

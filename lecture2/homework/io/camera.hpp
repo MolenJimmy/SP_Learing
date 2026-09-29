@@ -2,7 +2,7 @@
 
 #include "hikrobot/include/MvCameraControl.h"
 
-cv::Mat transfer(MV_FRAME_OUT & raw);
+cv::Mat transfer(MV_FRAME_OUT & raw, void * handle);
 
 class Camera
 {

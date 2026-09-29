@@ -9,9 +9,13 @@ int main()
 {
     // 1.初始化并打开相机（复用你之前的相机类）
     Camera my_camera;
+    if(!my_camera.Open()){
+    std::cout<<"No Camera"<<std::endl;
+    return 0;
+  }
 
     // 2.构造AprilTag检测器对象，传入yaml配置文件路径
-    auto_charge::AprilTagDetector tag_detector("config/apriltag_config.yaml");
+    auto_charge::AprilTagDetector tag_detector("configs/yolo.yaml");
 
     int frame_count = 0;
     while(true)
@@ -49,5 +53,7 @@ int main()
         if(key == 'q') break;
         frame_count++;
     }
+    my_camera.Close();
+    std::cout<<"Camera closed"<<std::endl;
     return 0;
 }

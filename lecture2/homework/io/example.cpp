@@ -27,6 +27,7 @@ cv::Mat transfer(MV_FRAME_OUT& raw)
     
     return img;
 }
+
 int main()
 { 
     // 打开相机
