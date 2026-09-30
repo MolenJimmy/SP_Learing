@@ -38,6 +38,21 @@ Pipeline::Pipeline(std::unique_ptr<FrameSource> source, PipelineConfig config)
 Pipeline::~Pipeline()
 {
     // TODO: Make sure Pipeline never destroys running threads.
+    
+    queue_.close();
+
+    if (producer_.joinable())
+    {
+        producer_.join();
+    }
+
+    for (auto &worker : workers_)
+    {
+        if (worker.joinable())
+        {
+            worker.join();
+        }
+    }
 }
 
 void Pipeline::start()
@@ -46,19 +61,24 @@ void Pipeline::start()
     workers_.reserve(static_cast<std::size_t>(config_.worker_count));
     for (int i = 0; i < config_.worker_count; ++i)
     {
+        //emplace_back创建worker线程，lambda捕获this（Pipeline实例）和worker_id=i，执行workerLoop(i)
         workers_.emplace_back([this, i]
                               { workerLoop(i); });
     }
+    // 单独创建producer生产者线程，执行producerLoop()
     producer_ = std::thread([this]
                             { producerLoop(); });
 }
 
+// 等待所有线程结束
 void Pipeline::wait()
 {
+    // 先join生产者线程，等生产者读完所有图片
     if (producer_.joinable())
     {
         producer_.join();
     }
+    // 再循环join每一个worker线程，等待队列中剩余帧全部处理完毕
     for (auto &worker : workers_)
     {
         if (worker.joinable())

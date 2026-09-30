@@ -3,17 +3,21 @@
 #include <utility>
 #include <vector>
 
+
+// 值传递深拷贝,完整复制一份 vector,函数内的data和外面的data是两份完全独立内存
 void copy(std::vector<int> data)
 {
   std::cout << "copy: copy new data, size = " << data.size() << '\n';
 }
 
+// 右值引用&&,搬指针，不搬几千万个数字
 void take(std::vector<int> && data)
 {
   std::vector<int> owned = std::move(data);
   std::cout << "take(&&): resource may be transferred, size = " << owned.size() << '\n';
 }
 
+// const &只读引用,不拷贝任何元素直接引用外面原始 vector
 void borrow(const std::vector<int> & data)
 {
   std::cout << "borrow(const&): caller keeps ownership, size = " << data.size() << '\n';

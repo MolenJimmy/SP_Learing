@@ -5,14 +5,17 @@ cv::Mat addNoiseColor(const cv::Mat & src)
 {
   CV_Assert(src.type() == CV_8UC3);  // 输入必须是 8-bit unsigned, 3 channels
 
-  cv::Mat dst = src;
+  // Mat内部只是header（行、列、类型、数据指针）,dst=src不会复制像素，只是两个Mat对象指向同一块像素内存
+  cv::Mat dst = src.clone();
 
   // 创建随机噪声
   cv::Mat noise(src.rows, src.cols, CV_8UC1);
   cv::randu(noise, 0, 50);
+  cv::Mat noise3;
+  cv::merge(std::vector<cv::Mat>{noise, noise, noise}, noise3);
 
   // 给图像加入噪声
-  cv::add(dst, noise, dst);
+  cv::add(dst, noise3, dst);
 
   return dst;
 }

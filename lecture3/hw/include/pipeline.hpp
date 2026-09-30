@@ -1,6 +1,7 @@
 #pragma once
 
 #include "blocking_queue.hpp"
+#include "blocking_queue.hpp"
 #include "frame_source.hpp"
 #include "image_processor.hpp"
 #include "statistics.hpp"

@@ -64,8 +64,11 @@ int main(int argc, char **argv)
         std::cout << "Mini Vision Pipeline\n====================\n\nWorkers: "
                   << options.workers << "\n\n";
 
+        // 创建独占智能指针unique_ptr，管理ImageSequenceSource对象
         auto source = std::make_unique<ImageSequenceSource>(
             options.input, options.producer_delay_ms);
+
+        // 移动语义，把source这个unique_ptr的所有权转移给Pipeline。移动之后，main里的source变成空，不再持有生产者对象   
         Pipeline pipeline(std::move(source),
                           {options.workers, options.worker_delay_ms, options.output});
         pipeline.start();

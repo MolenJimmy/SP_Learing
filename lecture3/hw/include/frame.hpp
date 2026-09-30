@@ -13,6 +13,7 @@ struct Frame
 };
 
 // 64-bit FNV-1a checksum of the image's raw bytes
+// 一个自定义64位哈希/校验函数，用来给整张图像的像素字节计算一个指纹
 inline std::uint64_t checksum(const cv::Mat &image)
 {
     if (image.empty() || !image.isContinuous())
