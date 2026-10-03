@@ -1,0 +1,41 @@
+[0.022s] Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/src/ep3/launch_learning -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning
+[0.088s] -- The C compiler identification is GNU 11.4.0
+[0.139s] -- The CXX compiler identification is GNU 11.4.0
+[0.152s] -- Detecting C compiler ABI info
+[0.265s] -- Detecting C compiler ABI info - done
+[0.271s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.271s] -- Detecting C compile features
+[0.271s] -- Detecting C compile features - done
+[0.276s] -- Detecting CXX compiler ABI info
+[0.409s] -- Detecting CXX compiler ABI info - done
+[0.418s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.418s] -- Detecting CXX compile features
+[0.418s] -- Detecting CXX compile features - done
+[0.420s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.623s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.742s] -- Configuring done
+[0.744s] -- Generating done
+[0.746s] -- Build files have been written to: /home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning
+[0.749s] Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/src/ep3/launch_learning -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning
+[0.750s] Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning -- -j8 -l8
+[0.806s] Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning -- -j8 -l8
+[0.807s] Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning
+[0.821s] -- Install configuration: ""
+[0.821s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/launch
+[0.821s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/launch/basic.launch.py
+[0.822s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/ament_index/resource_index/package_run_dependencies/launch_learning
+[0.822s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/ament_index/resource_index/parent_prefix_path/launch_learning
+[0.823s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/environment/ament_prefix_path.sh
+[0.823s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/environment/ament_prefix_path.dsv
+[0.823s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/environment/path.sh
+[0.823s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/environment/path.dsv
+[0.826s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/local_setup.bash
+[0.826s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/local_setup.sh
+[0.826s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/local_setup.zsh
+[0.826s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/local_setup.dsv
+[0.827s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/package.dsv
+[0.827s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/ament_index/resource_index/packages/launch_learning
+[0.827s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/cmake/launch_learningConfig.cmake
+[0.827s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/cmake/launch_learningConfig-version.cmake
+[0.827s] -- Installing: /home/molen/Documents/sp_vision_tutorial_27/lecture4/install/launch_learning/share/launch_learning/package.xml
+[0.829s] Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub:/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_pub:/opt/ros/humble PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/install/topic_learning_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/build/launch_learning

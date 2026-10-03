@@ -1,0 +1,216 @@
+[0.053s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.053s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x786238427640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7862385d4400>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7862385d4400>>)
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.126s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.126s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.126s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.132s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extension 'ignore'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extension 'ignore_ament_install'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extensions ['colcon_pkg']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extension 'colcon_pkg'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extensions ['colcon_meta']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extension 'colcon_meta'
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extensions ['ros']
+[0.133s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav_hw_interfaces) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav_hw_interfaces' with type 'ros.ament_cmake' and name 'nav_hw_interfaces'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extensions ['ignore', 'ignore_ament_install']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extension 'ignore'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extension 'ignore_ament_install'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extensions ['colcon_pkg']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extension 'colcon_pkg'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extensions ['colcon_meta']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extension 'colcon_meta'
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extensions ['ros']
+[0.135s] Level 1:colcon.colcon_core.package_identification:_identify(src/qos_debugger) by extension 'ros'
+[0.135s] DEBUG:colcon.colcon_core.package_identification:Package 'src/qos_debugger' with type 'ros.ament_cmake' and name 'qos_debugger'
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.146s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.148s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 273 installed packages in /opt/ros/humble
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'nav_hw_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.173s] DEBUG:colcon.colcon_core.verb:Building package 'nav_hw_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces', 'merge_install': False, 'path': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/nav_hw_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_target' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_clean_cache' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_clean_first' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'cmake_force_configure' from command line to 'False'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'ament_cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'catkin_cmake_args' from command line to 'None'
+[0.173s] Level 5:colcon.colcon_core.verb:set package 'qos_debugger' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.173s] DEBUG:colcon.colcon_core.verb:Building package 'qos_debugger' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger', 'merge_install': False, 'path': '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/qos_debugger', 'symlink_install': False, 'test_result_base': None}
+[0.173s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.174s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.174s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/nav_hw_interfaces' with build type 'ament_cmake'
+[0.174s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/nav_hw_interfaces'
+[0.175s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.176s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.176s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/nav_hw_interfaces -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces
+[1.140s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/nav_hw_interfaces -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces
+[1.141s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces -- -j8 -l8
+[2.113s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces -- -j8 -l8
+[2.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces
+[2.160s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav_hw_interfaces)
+[2.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/nav_hw_interfaces
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces' for CMake module files
+[2.162s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces' for CMake config files
+[2.162s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_hw_interfaces', 'cmake_prefix_path')
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.ps1'
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.dsv'
+[2.163s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.sh'
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib'
+[2.164s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_hw_interfaces', 'ld_library_path_lib')
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.ps1'
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.dsv'
+[2.164s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.sh'
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/bin'
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib/pkgconfig/nav_hw_interfaces.pc'
+[2.164s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib/python3.10/site-packages'
+[2.165s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/bin'
+[2.165s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.ps1'
+[2.165s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.dsv'
+[2.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.sh'
+[2.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.bash'
+[2.167s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.zsh'
+[2.167s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/colcon-core/packages/nav_hw_interfaces)
+[2.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav_hw_interfaces)
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces' for CMake module files
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces' for CMake config files
+[2.168s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_hw_interfaces', 'cmake_prefix_path')
+[2.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.ps1'
+[2.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.dsv'
+[2.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/cmake_prefix_path.sh'
+[2.169s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib'
+[2.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav_hw_interfaces', 'ld_library_path_lib')
+[2.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.ps1'
+[2.169s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.dsv'
+[2.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/hook/ld_library_path_lib.sh'
+[2.170s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/bin'
+[2.170s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib/pkgconfig/nav_hw_interfaces.pc'
+[2.170s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib/python3.10/site-packages'
+[2.170s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/bin'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.ps1'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.dsv'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.sh'
+[2.171s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.bash'
+[2.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/nav_hw_interfaces/package.zsh'
+[2.172s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/share/colcon-core/packages/nav_hw_interfaces)
+[2.172s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/qos_debugger' with build type 'ament_cmake'
+[2.172s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/qos_debugger'
+[2.172s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.172s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/qos_debugger -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger
+[2.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/src/qos_debugger -DCMAKE_INSTALL_PREFIX=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger
+[2.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger -- -j8 -l8
+[7.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger -- -j8 -l8
+[7.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger
+[7.487s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(qos_debugger)
+[7.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger' returned '0': AMENT_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/nav_hw_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/build/qos_debugger
+[7.487s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger' for CMake module files
+[7.487s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger' for CMake config files
+[7.488s] Level 1:colcon.colcon_core.shell:create_environment_hook('qos_debugger', 'cmake_prefix_path')
+[7.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.ps1'
+[7.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.dsv'
+[7.488s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.sh'
+[7.488s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib'
+[7.488s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/bin'
+[7.489s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib/pkgconfig/qos_debugger.pc'
+[7.489s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib/python3.10/site-packages'
+[7.489s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/bin'
+[7.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.ps1'
+[7.489s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.dsv'
+[7.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.sh'
+[7.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.bash'
+[7.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.zsh'
+[7.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/colcon-core/packages/qos_debugger)
+[7.490s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(qos_debugger)
+[7.491s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger' for CMake module files
+[7.491s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger' for CMake config files
+[7.491s] Level 1:colcon.colcon_core.shell:create_environment_hook('qos_debugger', 'cmake_prefix_path')
+[7.491s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.ps1'
+[7.491s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.dsv'
+[7.492s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/hook/cmake_prefix_path.sh'
+[7.492s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib'
+[7.492s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/bin'
+[7.492s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib/pkgconfig/qos_debugger.pc'
+[7.492s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/lib/python3.10/site-packages'
+[7.492s] Level 1:colcon.colcon_core.environment:checking '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/bin'
+[7.492s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.ps1'
+[7.493s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.dsv'
+[7.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.sh'
+[7.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.bash'
+[7.494s] INFO:colcon.colcon_core.shell:Creating package script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/qos_debugger/package.zsh'
+[7.494s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/qos_debugger/share/colcon-core/packages/qos_debugger)
+[7.494s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.495s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.495s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.498s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.498s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.498s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.505s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.505s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/local_setup.ps1'
+[7.506s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/_local_setup_util_ps1.py'
+[7.507s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/setup.ps1'
+[7.507s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/local_setup.sh'
+[7.508s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/_local_setup_util_sh.py'
+[7.508s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/setup.sh'
+[7.509s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/local_setup.bash'
+[7.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/setup.bash'
+[7.509s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/local_setup.zsh'
+[7.509s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/molen/Documents/sp_vision_tutorial_27/lecture4/homework/install/setup.zsh'
